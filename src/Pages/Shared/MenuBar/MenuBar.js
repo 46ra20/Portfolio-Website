@@ -10,13 +10,14 @@ const MenuBar = () => {
   };
   const menu = (
     <>
-      <li><Link>Home</Link></li>
-      <li><Link>About</Link></li>
-      <li><Link>Contact me</Link></li>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><Link>Contact With Me</Link></li>
     </>
   );
   return (
-    <div className="bg-gray-400 mb-10">
+    <div className="bg-gray-400 mb-10 fixed top-0 z-50 w-full">
       <div className="container mx-auto navbar">
         <div className=" navbar-start">
           <div className="dropdown">

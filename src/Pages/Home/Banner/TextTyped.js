@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 const TextTyped = () => {
   return (
-    <div className="text-3xl font-semibold">
+    <div className="text-3xl font-semibold h-32">
       <div>
         <Typed
           strings={[
