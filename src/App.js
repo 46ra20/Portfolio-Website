@@ -7,6 +7,8 @@ import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import Blog from "./Pages/Blog/Blog";
 import ProjectDetails from "./Pages/Home/Projects/ProjectDetails";
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   const router = createBrowserRouter([

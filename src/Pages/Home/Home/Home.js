@@ -1,4 +1,5 @@
-import React from "react";
+import React from "react";  
+import { ToastContainer} from 'react-toastify';
 import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 import ContactWithMe from "../ContactWithMe/ContactWithMe";
@@ -11,6 +12,7 @@ const Home = () => {
       <Projects />
       <AboutMe />
       <ContactWithMe />
+      <ToastContainer/>
     </div>
   );
 };

@@ -27,7 +27,19 @@ function ProjectDetails() {
         </div>
         <div className="mx-3 md:mx-0">
           {name && <h2 className="text-3xl font-semibold">{name}</h2>}
-          {description && <p className="my-5"><span className="underline font-semibold pr-5">Description:-</span>{description}</p>}
+          {description && (
+            <p className="my-5">
+              <span className="underline font-semibold pr-5">
+                Description:-
+              </span>
+              {description}
+            </p>
+          )}
+          <p>
+            {gitHub && <a href={gitHub} className="pr-2">Client Side Code</a>}
+            {server && <a href={server} className="px-2 border-l-2">Server Side Code</a>}
+            {live && <a href={live} className="px-2 border-l-2">Live Site</a>}
+          </p>
         </div>
       </div>
       <div className="my-10 grid grid-cols-1 md:grid-cols-2 mx-3 md:mx-0">
@@ -37,13 +49,17 @@ function ProjectDetails() {
               Features are available in this project:-
             </p>
           )}
-          <ul className="list-inside list-disc">{features && features.map((f, i) => <li key={i}>{f}</li>)}</ul>
+          <ul className="list-inside list-disc">
+            {features && features.map((f, i) => <li key={i}>{f}</li>)}
+          </ul>
         </div>
         <div>
           {technology && (
             <p className="underline text-xl">Usages Technology:-</p>
           )}
-          <ul className="list-inside list-disc">{technology && technology.map((f, i) => <li key={i}>{f}</li>)}</ul>
+          <ul className="list-inside list-disc">
+            {technology && technology.map((f, i) => <li key={i}>{f}</li>)}
+          </ul>
         </div>
       </div>
     </div>
