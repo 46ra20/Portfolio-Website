@@ -1,17 +1,26 @@
 import SendIcon from "@mui/icons-material/Send";
-import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
+
 
 const ContactWithMe = () => {
 
-  const handleSubmit = (e) =>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
     const name = form.name.value;
     const email = form.email.value;
     const subject = form.subject.value;
     const massage = form.massage.value;
-    const data = {name, email, subject, massage};
+    const data = { name, email, subject, massage };
     console.log(data)
+
+
+    emailjs.sendForm('service_hbo3f7b', 'template_93q1e2q', form.current, 'x1XcfnRc9eSAmYC7V')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
   }
 
   return (
@@ -29,11 +38,10 @@ const ContactWithMe = () => {
           <input name="subject" placeholder="Subject" className="input input-md w-full my-3" type={'text'}></input>
           <label htmlFor="name">Massages:</label>
           <textarea name="massage" placeholder="Massages" className="textarea w-full my-3" type={'text'}></textarea>
-          <button className="btn btn-accent btn-md w-32">Submit</button>
+          <button className="btn btn-accent btn-md w-32">Submit <SendIcon /></button>
         </form>
       </div>
     </div>
   );
-};
-
+}
 export default ContactWithMe;

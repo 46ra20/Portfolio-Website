@@ -1,5 +1,4 @@
 import React from "react";
-import Blog from "../../Blog/Blog";
 import AboutMe from "../AboutMe/AboutMe";
 import Banner from "../Banner/Banner";
 import ContactWithMe from "../ContactWithMe/ContactWithMe";
@@ -12,7 +11,6 @@ const Home = () => {
       <Projects />
       <AboutMe />
       <ContactWithMe />
-      <Blog />
     </div>
   );
 };

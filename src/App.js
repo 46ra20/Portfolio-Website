@@ -6,6 +6,7 @@ import { useCallback } from "react";
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import Blog from "./Pages/Blog/Blog";
+import ProjectDetails from "./Pages/Home/Projects/ProjectDetails";
 
 
 
@@ -26,13 +27,18 @@ function App() {
         {
           path:'/blog',
           element: <Blog />
+        },
+        {
+          path:'/project/:id',
+          loader: async({params}) => fetch(`data.json/${params.id}`),
+          element:<ProjectDetails></ProjectDetails>
         }
       ],
     },
   ]);
 
   const particlesInit = useCallback(async engine => {
-    console.log(engine);
+    // console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -40,7 +46,7 @@ function App() {
   }, []);
 
   const particlesLoaded = useCallback(async container => {
-    await console.log(container);
+    // await console.log(container);
   }, []);
 
 
@@ -97,7 +103,7 @@ function App() {
             number: {
               density: {
                 enable: true,
-                area: 1000,
+                area: 2000,
               },
               value: 80,
             },
