@@ -17,7 +17,7 @@ function Project({ project }) {
                     }
                     {
                         description && <p className="flex-grow-0">
-                        {description}
+                        {description.slice(0,100)}
                     </p>
                     }
                     <div className="card-actions justify-around">
