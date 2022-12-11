@@ -1,13 +1,23 @@
 [
     {
-        "id": "01",
+        "id": "0",
         "name": "JSRN Book House",
         "description": "Used Product resell. An E-commerce website.",
         "gitHub": "https://github.com/46ra20/JSRN-Book-House-Client_Side",
         "server": "https://github.com/46ra20/JSRN-Book-house-server-side",
         "live": "https://lively-bienenstitch-0f7dd2.netlify.app/",
-        "features": "",
-        "technology": "",
+        "features": [
+            "Three Step Security",
+            "Private Router",
+            "Admin Seller and Buyer have different Router",
+            "Admin can delete any user",
+            "Admin Can Verify any seller"
+        ],
+        "technology":[
+            "Axios",
+            "React Query",
+            "Tailwind"
+        ],
         "pictures": [
             "https://i.ibb.co/qMK5bXg/1-2.png",
             "https://i.ibb.co/895NPJh/1-4.png",
@@ -16,14 +26,22 @@
         ]
     },
     {
-        "id": "02",
+        "id": "1",
         "name": "JSRN Kitchen",
         "description": "",
         "gitHub": "https://github.com/46ra20/JSRN-Kitchn-client-side",
         "server": "https://github.com/46ra20/JSRN-Kitchn-server-side",
         "live": "https://inspiring-cactus-bc978f.netlify.app/",
-        "features": "",
-        "technology": "",
+        "features": [
+            "You can shear your creativity with other",
+            "Full Dynamic",
+            "Different Authentication System"
+        ],
+        "technology": [
+            "React Router Dom",
+            "React Tooltip",
+            "Hot Toaster"
+        ],
         "pictures": [
             "https://i.ibb.co/dpTm0zT/2-1.png",
             "https://i.ibb.co/C7S7R2t/2-2.png",
@@ -32,7 +50,7 @@
         ]
     },
     {
-        "id": "03",
+        "id": "2",
         "name": "JSRN Learning Platform",
         "description": "",
         "gitHub": "https://github.com/46ra20/Learing-Platfrom_Client-Side",
@@ -48,7 +66,7 @@
         ]
     },
     {
-        "id": "04",
+        "id": "3",
         "name": "Speed Monster",
         "description": "",
         "gitHub": "https://github.com/46ra20/Speed_Typer",
