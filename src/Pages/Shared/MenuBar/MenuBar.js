@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const MenuBar = () => {
   const handleResume = () => {
@@ -10,10 +11,11 @@ const MenuBar = () => {
   };
   const menu = (
     <>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><Link>Contact With Me</Link></li>
+      <li><HashLink to="/home#home">Home</HashLink></li>
+      <li><HashLink to="/home#projects">Projects</HashLink></li>
+      <li><Link to="/blog">Blog</Link></li>
+      <li><HashLink to="/home#about-me">About</HashLink></li>
+      <li><HashLink to="/home#contact-with-me">Contact With Me</HashLink></li>
     </>
   );
   return (
